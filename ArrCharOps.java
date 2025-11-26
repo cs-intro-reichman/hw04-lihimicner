@@ -171,8 +171,8 @@ public class ArrCharOps {
         int length2 = str2.length();
         int minLength = Math.min(length1, length2);
         for (int i = 0; i < minLength; i++) {
-            char ch1 = str1.charAt(i);
-            char ch2 = str2.charAt(i);
+            char ch1 = Character.toLowerCase(str1.charAt(i));
+            char ch2 = Character.toLowerCase(str2.charAt(i));
             if (ch1 < ch2) {
                 return -1;
             } else if (ch1 > ch2) {
